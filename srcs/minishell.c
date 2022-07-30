@@ -10,9 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "../includes/minishell.h"
 
 int main(int ac, char **av, char **env)
 {
+    char *path;
+    char **splitted_path;
     
+    path = env[17];
+    splitted_path = ft_split(path, ':');
 }
